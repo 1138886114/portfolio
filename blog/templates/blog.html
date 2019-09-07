@@ -1,24 +1,24 @@
-{#<!DOCTYPE html>#}
-{#<html lang="en">#}
-{#<head>#}
-{#    <meta charset="UTF-8">#}
-{#    <title>博客</title>#}
-{#</head>#}
-{#<body>#}
-{#<h1>blog</h1>#}
-{#{% for blog in blogs.all %}#}
-{#{{ blog.title }}#}
-{#<br>#}
-{#{{ blog.date }}#}
-{#<br>#}
-{#    <img src="{{ blog.image.url }}" height="80%">#}
-{#<br>#}
-{#{{ blog.text }}#}
-{#{% endfor %}#}
-{##}
-{##}
-{#</body>#}
-{#</html>#}
+<!--{#<!DOCTYPE html>#}-->
+<!--{#<html lang="en">#}-->
+<!--{#<head>#}-->
+<!--{#    <meta charset="UTF-8">#}-->
+<!--{#    <title>博客</title>#}-->
+<!--{#</head>#}-->
+<!--{#<body>#}-->
+<!--{#<h1>blog</h1>#}-->
+<!--{#{% for blog in blogs.all %}#}-->
+<!--{#{{ blog.title }}#}-->
+<!--{#<br>#}-->
+<!--{#{{ blog.date }}#}-->
+<!--{#<br>#}-->
+<!--{#    <img src="{{ blog.image.url }}" height="80%">#}-->
+<!--{#<br>#}-->
+<!--{#{{ blog.text }}#}-->
+<!--{#{% endfor %}#}-->
+<!--{##}-->
+<!--{##}-->
+<!--{#</body>#}-->
+<!--{#</html>#}-->
 
 <!doctype html>
 <html lang="en">
@@ -104,7 +104,7 @@
   </section>
     <div class="container">
         {% for blog in blogs.all %}
-        <h2><a href="">{{ blog.title }}</a></h2>
+        <h2><a href="{{ blog.id }}">{{ blog.title }}</a></h2>
         {{ blog.date }}
         <br>
             <img src="{{ blog.image.url }}" height=400>
